@@ -1,0 +1,39 @@
+{
+  "collectors": {
+    "2merkato": {
+      "id": "c_mt0amzvv1ryuwsfjo7",
+      "url": "https://www.2merkato.com/news/banking-and-finance/",
+      "name": "merkato-news",
+      "status": "active",
+      "output_file": "data/2merkato.json"
+    },
+    "mekina": {
+      "id": "c_mt36peobj8en307wk",
+      "url": "https://mekina.net/",
+      "name": "mekina-autos",
+      "status": "active",
+      "output_file": "data/mekina.json"
+    },
+    "shega": {
+      "id": "c_mt36vnv82kaove7xfj",
+      "url": "https://shega.co/news/",
+      "name": "shega-tech-news",
+      "status": "active",
+      "output_file": "data/shega.json"
+    },
+    "jiji": {
+      "id": "c_mt3767ec1q0u0k1udw",
+      "url": "https://jiji.com.et/electronics",
+      "name": "jiji-electronics",
+      "status": "active",
+      "output_file": "data/jiji.json"
+    },
+    "ethiojobs": {
+      "id": "c_mt37gbucxqvek3flm",
+      "url": "https://www.ethiojobs.net/",
+      "name": "ethiojobs-listings",
+      "status": "active",
+      "output_file": "data/ethiojobs.json"
+    }
+  }
+}

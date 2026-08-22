@@ -1,0 +1,23 @@
+{
+  "name": "ethiofin-pulse",
+  "version": "1.0.0",
+  "description": "EthioFin Pulse — Self-Healing Ethiopian Intelligence Pipeline (Scrape-Verse Hackathon)",
+  "type": "module",
+  "main": "scraper_app.js",
+  "scripts": {
+    "scrape": "node scraper_app.js --all",
+    "scrape:2merkato": "node scraper_app.js --target=2merkato",
+    "scrape:mekina": "node scraper_app.js --target=mekina",
+    "scrape:shega": "node scraper_app.js --target=shega",
+    "scrape:jiji": "node scraper_app.js --target=jiji",
+    "scrape:ethiojobs": "node scraper_app.js --target=ethiojobs",
+    "list": "node scraper_app.js --list",
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "start": "npx serve . -l 3000",
+    "dev": "npm --prefix frontend run dev"
+  },
+  "devDependencies": {
+    "@brightdata/cli": "^0.3.5"
+  }
+}
