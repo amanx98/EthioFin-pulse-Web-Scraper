@@ -29,7 +29,7 @@ The project pairs these 5 autonomous cloud collectors with a hyper-polished, **B
 ![Scraping Terminal](./images/terminal.png)
 
 **Mobile Responsive View**
-![Mobile View](./images/mobile.jpg)
+<img src="./images/mobile.jpg" alt="Mobile View" width="300" />
 
 ---
 
