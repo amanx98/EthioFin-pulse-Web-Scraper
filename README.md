@@ -20,6 +20,19 @@ The project pairs these 5 autonomous cloud collectors with a hyper-polished, **B
 
 ---
 
+## 📸 Project Interface
+
+**Desktop Intelligence Terminal**
+![Desktop Landing Page](./images/landing.png)
+
+**Live Extraction Terminal**
+![Scraping Terminal](./images/terminal.png)
+
+**Mobile Responsive View**
+![Mobile View](./images/mobile.jpg)
+
+---
+
 ## 🚀 Key UI & Intelligence Features
 
 * **Real-Time Scrape Execution:** Click **"SCRAPE NOW"** to trigger the backend `scraper_app.js` locally, intercept logs, and hot-reload the UI.
