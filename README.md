@@ -120,3 +120,7 @@ The core architectural pillar of this submission is **in-place self-healing**: w
   * Autonomous self-healing lifecycle execution with full audit trail.
   * Zero downstream disruption — identical Collector IDs preserved across all heal cycles.
   * Ultra-responsive, Crimson/Buttercream terminal UI with glassmorphism, sparklines, and real-time scrape triggers.
+ 
+
+⚠️ Note to Judges regarding Commit History:
+During the final hours of the sprint, my local IDE (Antigravity) suffered a critical core failure (language_server.exe corruption), which required completely wiping the local application data and re-linking the project. As a result, my local Git tree was detached, and this repository represents a single bulk-push of the restored, finalized project files for deployment.
