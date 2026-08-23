@@ -461,7 +461,7 @@ const staggerItem = {
 export default function App() {
   const [viewMode, setViewMode] = useState(localStorage.getItem('ethiofin_view') || 'landing');
   const [isLogViewerOpen, setIsLogViewerOpen] = useState(false);
-  const [logs, setLogs] = useState(() => Array.from({length: 30}, (_, i) => `[${new Date(Date.now() - i*10000).toISOString()}] INFO: Fetching ${Math.floor(Math.random()*100)} records...`));
+  const [logs, setLogs] = useState([`[${new Date().toISOString()}] SYSTEM READY`, `[${new Date().toISOString()}] WAITING FOR SCRAPE TRIGGER...`]);
   const [dashboardTheme, setDashboardTheme] = useState('phosphor');
   const [activeStreamKey, setActiveStreamKey] = useState(localStorage.getItem('ethiofin_stream') || '2merkato');
   const [searchQuery, setSearchQuery] = useState('');
@@ -634,7 +634,7 @@ export default function App() {
     if (!filteredRecords.length) return;
     const headers = Object.keys(filteredRecords[0]).filter(k => k !== 'input');
     const rows = [headers.join(','), ...filteredRecords.map(row => headers.map(h => `"${String(row[h] ?? '').replace(/"/g, '""')}"`).join(','))];
-    const blob = new Blob([rows.join('n')], { type: 'text/csv' });
+    const blob = new Blob([rows.join('\n')], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a'); a.href = url; a.download = `ethiofin_${activeStreamKey}_${Date.now()}.csv`; a.click();
     URL.revokeObjectURL(url);
