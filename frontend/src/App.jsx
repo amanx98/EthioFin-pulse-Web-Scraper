@@ -499,7 +499,7 @@ export default function App() {
     const evtSource = new EventSource('/api/scrape/' + activeStreamKey);
     evtSource.onmessage = (e) => {
       const data = JSON.parse(e.data);
-      if (data === 'DONE') {
+      if (data === 'DONE' || data === '"DONE"' || data.includes('DONE')) {
         evtSource.close();
         setIsScraping(false);
         localStorage.setItem('lastScraped_' + activeStreamKey, new Date().toISOString());

@@ -19,5 +19,8 @@
   },
   "devDependencies": {
     "@brightdata/cli": "^0.3.5"
+  },
+  "dependencies": {
+    "playwright": "^1.62.1"
   }
 }
